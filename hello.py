@@ -412,7 +412,7 @@ def home():
     #hub zone
     if hub_zone_count == 1:
         for x in all_companies:
-            if x[6] == disabled_vet_input:
+            if x[6] == hub_zone_input:
                     pass_list.append(x[0])
                     pass_list.append(x[1])
                     pass_list.append(x[2])
@@ -492,7 +492,7 @@ def home():
     #gov
     if gov_count == 1:
         for x in all_companies:
-            if x[10] == nnsa_input:
+            if x[10] == gov_input:
                     pass_list.append(x[0])
                     pass_list.append(x[1])
                     pass_list.append(x[2])
@@ -636,5 +636,6 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
